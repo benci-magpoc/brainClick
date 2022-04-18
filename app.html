@@ -14,6 +14,8 @@
     <!-- Custom Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +23,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@200;400&family=Roboto:wght@300;700&display=swap"
         rel="stylesheet">
+
 
     <!-- Add a favicon -->
     <link rel="shortcut icon" href="./IMG/faviconBM.png" type="image/x-icon">
@@ -70,21 +73,73 @@
 
     <main class="flex-shrink-0 py-3">
         <div class="container mt-5">
-            <h1>To Do List</h1>
-            <div class="row align-items-end">
-                <div class="col">
-                    <label for="txtMessage" class="form-label" id="inputLabel">Item</label>
-                    <input type="text" class="form-control" id="txtMessage" placeholder="Enter Item">
+            <header>
+                <h1>Matching Game</h1>
+            </header>
+
+            <section class="score-panel">
+                <ul class="stars">
+
+                </ul>
+
+                <span class="moves">0</span> Moves
+
+                <div class="restart">
+                    <i class="fa fa-repeat"><span id="timer"> 00:00</span></i>
                 </div>
-                <div class="col">
-                    <button id="btnSubmit" class="btn btn-lg btn-primary">Add</button>
-                </div>
-            </div>
-            <div class=" mt-5">
-                <ol id="results" class="list-group list-group-numbered messageClass">
-                    <!-- Items will go here -->
-                </ol>
-            </div>
+            </section>
+
+            <ul class="deck">
+                <li class="card">
+                    <i class="fa fa-diamond"></i>
+                </li>
+                <li class="card">
+                    <i class="fa fa-paper-plane-o"></i>
+                </li>
+                <li class="card">
+                    <i class="fa fa-anchor"></i>
+                </li>
+                <li class="card">
+                    <i class="fa fa-bolt"></i>
+                </li>
+                <li class="card">
+                    <i class="fa fa-cube"></i>
+                </li>
+                <li class="card">
+                    <i class="fa fa-anchor"></i>
+                </li>
+                <li class="card">
+                    <i class="fa fa-leaf"></i>
+                </li>
+                <li class="card">
+                    <i class="fa fa-bicycle"></i>
+                </li>
+                <li class="card">
+                    <i class="fa fa-diamond"></i>
+                </li>
+                <li class="card">
+                    <i class="fa fa-bomb"></i>
+                </li>
+                <li class="card">
+                    <i class="fa fa-leaf"></i>
+                </li>
+                <li class="card">
+                    <i class="fa fa-bomb"></i>
+                </li>
+                <li class="card">
+                    <i class="fa fa-bolt"></i>
+                </li>
+                <li class="card">
+                    <i class="fa fa-bicycle"></i>
+                </li>
+                <li class="card">
+                    <i class="fa fa-paper-plane-o"></i>
+                </li>
+                <li class="card">
+                    <i class="fa fa-cube"></i>
+                </li>
+            </ul>
+        </div>
         </div>
     </main>
 
