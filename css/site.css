@@ -1,0 +1,95 @@
+:root {
+
+    /* fonts */
+    --bm-title-font: 'Bebas Neue', sans-serif;
+    --bm-subtitle-font: 'Fira Sans', sans-serif;
+    --bm-heading-font: 'Bebas Neue', sans-serif;
+    --bm-body-font: 'Roboto', sans-serif;
+
+    /* theme colors */
+    --bm-primary-color: rgb(145, 203, 251);
+    --bm-secondary-color: rgb(66, 148, 186);
+    --bm-highlight-color: rgb(250, 225, 120);
+    --bm-dark-color: rgb(33, 33, 33);
+    --bm-light-color: rgb(222, 238, 251);
+    --bm-background-color: rgba(250, 250, 250, .8);
+
+    /* text colors */
+    --bm-font-size: 1.2rem;
+    --bm-font-weight: 400;
+    --bm-line-height: 1.5rem;
+    --bm-title-color: var(--bm-dark-color);
+
+    /* form colors */
+    --bm-formfocus-border-color: var(--bm-secondary-color);
+    --bm-formfocus-shadow: var(--bm-primary-color);
+    --bm-formfocus-background-color: var(--bm-background-color);
+
+    /* custom navbar color */
+    --bm-nav-toggler-glow: rgba(250, 225, 120, .55);
+    --bm-nav-toggler-color: var(--bm-highlight-color);
+
+    --cf-orange: #ff993b;
+}
+
+body {
+    font-size: 1.2rem;
+}
+
+nav {
+    background-color: var(--bm-dark-color);
+}
+
+main>.container {
+    padding: 60px 15px 0;
+    margin-bottom: 5rem;
+}
+
+.techIcons {
+    font-size: 3rem;
+    /* color: var(--bm-light-color); */
+    padding-right: 1rem;
+}
+
+.sticky-footer {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--bm-dark-color);
+    color: var(--bm-light-color);
+}
+
+.socialIcons>a {
+    font-size: 1.5rem;
+    color: var(--bm-light-color);
+    padding-right: 1rem;
+}
+
+footer a:hover,
+footer img:hover {
+    color: var(--bm-highlight-color);
+    opacity: 1;
+}
+
+.checklist {
+    list-style: none;
+}
+
+.checklist i {
+    color: var(--cf-orange);
+
+}
+
+.messageClass {
+    color: var(--cf-orange);
+    font-size: 1rem;
+}
+
+@media (min-width: 575.98px) {
+    .techIcons {
+        font-size: 5rem;
+        /* color: var(--bm-light-color); */
+        padding-right: 1rem;
+    }
+}
