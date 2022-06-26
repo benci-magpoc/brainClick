@@ -185,11 +185,12 @@ function reduceStar() {
 
 //player finished the game
 function gameFinish(time) {
-    var gameReset = confirm("Congratulations!\nYou have made " + moveCounter + " moves" +
-        "\nYour Score is: " + starCount + " stars, and your time is: " + time +
-        "\nPress OK to play again!!!");
-
-    if (gameReset) location.reload();
+    setTimeout(function () {
+        var gameReset = confirm("Congratulations!\nYou have made " + moveCounter + " moves" +
+            "\nYour Score is: " + starCount + " stars, and your time is: " + time +
+            "\nPress OK to play again!!!");
+        if (gameReset) location.reload();
+    }, 1000);
 }
 //startTimer is a function that
 function startTimer() {
